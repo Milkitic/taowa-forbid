@@ -1,55 +1,38 @@
 using System;
-using 外套娃超大.外套娃大.外套娃中.外套娃小.外套娃迷你;
 
-namespace 外套娃超大
+namespace 外套娃巨大
 {
     namespace 外套娃大
     {
-        namespace 外套娃中
+        public class 套娃究极大
         {
-            namespace 外套娃小
+            public class 套娃巨大
             {
-                namespace 外套娃迷你
+                public 套娃巨大()
                 {
-                    public class 套娃超大
+                    void 套娃超大()
                     {
-                        public class 套娃大
+                        void 套娃大()
                         {
-                            public class 套娃中
+                            var 套娃中 = new Action(delegate
                             {
-                                public class 套娃小
+                                var 套娃小 = new Action(() =>
                                 {
-                                    public class 套娃迷你
+                                    var 套娃迷你 = new Action(() =>
                                     {
-                                        public 套娃迷你()
-                                        {
-                                            内套娃超大();
-                                            void 内套娃超大()
-                                            {
-                                                内套娃大();
-                                                void 内套娃大()
-                                                {
-                                                    内套娃中();
-                                                    void 内套娃中()
-                                                    {
-                                                        内套娃小();
-                                                        void 内套娃小()
-                                                        {
-                                                            内套娃迷你();
-                                                            void 内套娃迷你()
-                                                            {
-                                                                throw new StackOverflowException("禁止套娃");
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                                        throw new StackOverflowException("禁止套娃");
+                                    });
+                                    套娃迷你();
+                                });
+                                套娃小();
+                            });
+                            套娃中();
                         }
+
+                        套娃大();
                     }
+
+                    套娃超大();
                 }
             }
         }
@@ -60,6 +43,6 @@ class Program
 {
     public static void Main(string[] args)
     {
-        _ = new 套娃超大.套娃大.套娃中.套娃小.套娃迷你();
+        var 套娃 = new 外套娃巨大.外套娃大.套娃究极大.套娃巨大();
     }
 }
